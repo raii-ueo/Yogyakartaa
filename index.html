@@ -10,13 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <!--
-
-TemplateMo 612 Parallax Starter
-
-https://templatemo.com/tm-612-parallax-starter
-
--->
 </head>
 <body>
 
@@ -35,13 +28,13 @@ https://templatemo.com/tm-612-parallax-starter
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#gallery">GALLERY</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                <p id="UserInfo">Belum Login</p>
-                
-    <div id="authArea">
-        <button onclick="goLogin()" class="nav-cta">LOGIN</button>
-    </div>
-                
             </ul>
+            
+            <!-- DIPINDAHKAN KELUAR DARI UL agar welcome.js bisa membacanya dengan baik -->
+            <p id="UserInfo">Belum Login</p>
+            <div id="authArea">
+                <button onclick="goLogin()" class="nav-cta">LOGIN</button>
+            </div>
         </div>
     </nav>
 
@@ -100,8 +93,7 @@ https://templatemo.com/tm-612-parallax-starter
                     <div class="service-icon">
                     </div>
                     <h3>SIMBOL</h3>
-                    <p class="caps">Kompleks istana ini dibagi menjadi beberapa halaman (pelataran) yang dipisahkan oleh gerbang besar bernama Regol. Setiap pelataran, mulai dari Alun-Alun Utara, Pagelaran, hingga kompleks inti Kedhaton, memiliki vegetasi dan tanaman khusus—seperti pohon beringin dan sawo kecik—yang masing-masing membawa pesan moral dan spiritual bagi penghuninya.
-</p>
+                    <p class="caps">Kompleks istana ini dibagi menjadi beberapa halaman (pelataran) yang dipisahkan oleh gerbang besar bernama Regol. Setiap pelataran, mulai dari Alun-Alun Utara, Pagelaran, hingga kompleks inti Kedhaton, memiliki vegetasi dan tanaman khusus—seperti pohon beringin dan sawo kecik—yang masing-masing membawa pesan moral dan spiritual bagi penghuninya.</p>
                 </div>
                 <div class="service-item">
                     <div class="service-icon">
@@ -163,7 +155,9 @@ https://templatemo.com/tm-612-parallax-starter
     <footer id="templatemo-footer">
         <p>Copyright &copy; 2026 Your Company. Designed by <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a></p>
     </footer>
+    
     <script src="templatemo-parallax-script.js"></script>
-      <script src="login/js/welcome.js"></script>
+    <!-- Pastikan path ini sesuai dengan folder js di dalam folder login -->
+    <script src="login/js/welcome.js"></script>
 </body>
 </html>
